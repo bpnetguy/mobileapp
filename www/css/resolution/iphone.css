@@ -1,0 +1,49 @@
+
+.ipad-only, .iphone-only, .retina-only, .non-retina-only, .retina-iphone-only, .non-retina-iphone-only { display: none; }
+ 
+/* ---------- iPad Only ---------- */
+@media only screen and (device-width: 768px) {
+  .ipad-only { display: block; }
+}
+ 
+/* ---------- iPhone/iPod Only ---------- */
+@media only screen and (device-width: 320px) {
+  .iphone-only { display: block; }
+}
+ 
+/* ---------- Retina Device Only ---------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .retina-only { display: block; }
+  .button { font-size:120px;}
+  .componentName { font-size:94px}
+  .componentDescription { 
+      font-size:45px;
+  }
+}
+
+@media only screen and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .retina-only { display: block; }
+}
+ 
+/* ---------- Non Retina Device Only ---------- */
+@media only screen and (-webkit-max-device-pixel-ratio: 1) {
+  .non-retina-only { display: block; }
+}
+ 
+/* ---------- Retina iPhone/iPod Only ---------- */
+@media only screen and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .retina-iphone-only { display: block; }
+}
+@media only screen and (orientation: portrait) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .retina-iphone-only { display: block; }
+  .button { font-size:260px;}
+  .componentName { font-size:150px;}
+  .componentDescription { 
+      font-size:100px;
+  }
+}
+ 
+/* ---------- Non Retina iPhone/iPod Only ---------- */
+@media only screen and (device-width: 320px) and (-webkit-max-device-pixel-ratio: 1) {
+  .non-retina-iphone-only { display: block; }
+}
