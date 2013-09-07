@@ -12,7 +12,7 @@ define(['backbone', 'models/GPIO'], function (Backbone, GPIOModel){
             command:"ls"
         },
         model:GPIOModel,
-        url:"https://phan-tastic.dyndns.org/HomeController/gpio/list",
+        url:"http://phan-tastic.dyndns.org/HomeController/gpio/list",
 	parse: function(response) {
             var data = [];
             $.each(response, function(key, item) {
