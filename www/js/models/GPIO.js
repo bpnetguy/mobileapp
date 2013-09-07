@@ -15,7 +15,7 @@ define(['backbone'], function (Backbone){
         },
 	url: function() {
 		var status = (this.get('status') === "off" ? "on" : "off");
-		return "./gpio/"+ status+ "/" + this.get('id');
+		return "http://phan-tastic.dyndns.org/HomeController/gpio/"+ status+ "/" + this.get('id');
 	}
     });
     return GPIO;
